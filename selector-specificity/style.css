@@ -1,0 +1,21 @@
+/* 1 gold, 2 silver, 1 bronze */
+body #section-identification .wrapper .paragraph {
+  color: brown;
+}
+
+section.secta div p {
+  color: greenyellow;
+}
+
+.wrapper p.paragraph {
+  color: pink;
+}
+
+/* 1 gold, 1 silver, 1 bronze */
+section#section-identification p.paragraph {
+  color: blue;
+}
+
+#section-identification p {
+  color: yellow;
+}

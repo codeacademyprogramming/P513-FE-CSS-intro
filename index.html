@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS - Cascading StyleSheets -->
+    <!-- 
+        External
+        Internal
+        Inline
+    -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      /* Selector */
+      /* 
+        ID,
+        class,
+        element name
+      */
+      /* p {
+        color: red;
+        background-color: yellow;
+      } */
+
+      /* span {
+        color: yellow;
+        background-color: black;
+      } */
+
+      .this-is-a-paragraph {
+        color: red;
+        background-color: yellow;
+      }
+
+      /* DRY - don't repeat yourself */
+
+      /* #likes-text-third {
+        background-color: green;
+      } */
+
+      .likes-text {
+        color: yellow;
+        background-color: black; /* override */
+      }
+
+      #likes-text-first.likes-text {
+      }
+
+      section.about.different div.inner-division {
+        background-color: red;
+      }
+
+      .contact.different .inner-division {
+        background-color: yellow;
+      }
+
+      /* Selector Specificity */
+    </style>
+
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
+    <title>CSS intro</title>
+  </head>
+  <body>
+    <!-- HTML - skeleton -->
+    <!-- CSS - race  -->
+    <!-- JS - behaviours  -->
+
+    <!-- <p class="this-is-a-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et possimus atque
+      vitae quibusdam porro id culpa distinctio impedit repellat? Quasi, earum!
+      Iure, officiis iusto tempore magnam molestias voluptates provident eveniet
+      adipisci! Omnis provident dicta pariatur consectetur officiis facilis,
+      error illo veniam at, numquam praesentium illum beatae! Laudantium sequi
+      magni assumenda?
+    </p>
+
+    <div class="this-is-a-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et possimus atque
+      vitae quibusdam porro id culpa distinctio impedit repellat? Quasi, earum!
+      Iure, officiis iusto tempore magnam molestias voluptates provident eveniet
+      adipisci! Omnis provident dicta pariatur consectetur officiis facilis,
+      error illo veniam at, numquam praesentium illum beatae! Laudantium sequi
+      magni assumenda?
+    </div>
+
+    <section class="this-is-a-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et possimus atque
+      vitae quibusdam porro id culpa distinctio impedit repellat? Quasi, earum!
+      Iure, officiis iusto tempore magnam molestias voluptates provident eveniet
+      adipisci! Omnis provident dicta pariatur consectetur officiis facilis,
+      error illo veniam at, numquam praesentium illum beatae! Laudantium sequi
+      magni assumenda?
+    </section> -->
+
+    <span id="likes-text-first" class="likes-text">12412412 likes</span>
+    <span id="likes-text-second" class="likes-text">12412412 likes</span>
+    <span
+      style="color: red; background-color: aquamarine"
+      id="likes-text-third"
+      class="likes-text different"
+      >12412412 likes</span
+    >
+    <span id="likes-text-fourth" class="likes-text">12412412 likes</span>
+    <span id="likes-text-fifth" class="likes-text">12412412 likes</span>
+    <!-- id - identification -->
+
+    <section class="about different">
+      <div class="inner-division"></div>
+      <p class="inner-division"></p>
+    </section>
+
+    <section class="different"></section>
+
+    <section class="contact different">
+      <div class="inner-division"></div>
+    </section>
+  </body>
+</html>
